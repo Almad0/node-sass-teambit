@@ -1,14 +1,6 @@
-
-$bg_dark: #333;
-$text_white: white;
-
-
-
-body{
-  background-color: $bg_dark;
-}
-
-
-h2, h3{
-  color: $text_white;
+@mixin flex($direction: row, $justyfy: center, $align: center){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justyfy;
+  align-items: $align;
 }

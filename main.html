@@ -8,12 +8,44 @@
   </head>
   <body>
 
-    <div class="root">
-      
+    <div id="root">
+      <header>
 
+        <nav class="container">
+          <div class="logo">
+            <img :src=`${logo}` alt="logo con faccina">
+          </div>
+
+          <div class="menu">
+            <p class="linkMenu" v-for="(links, index) in navLink">{{links.name}}</p>
+            <button class="g-btn" type="button" name="signUp"><img src="dist/img/google-logo.svg"> Sign up</button>
+          </div>
+        </nav>
+
+      </header>
+
+      <main>
+        <div class="jumbo">
+          <div class="jumboLeft">
+            <h1>Understand, recognize and develop your people</h1>
+            <p>Teambit helps teams create a high performing culture with regular feedback</p>
+            <p><button type="button" name="g-sign">Sign in with Google</button> or <button type="button" name="s-sign">Sign in with Slack</button> or use your emali adress &#8594;</p>
+          </div>
+
+          <div class="jumboRight">
+            <img src="" alt="">
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+
+      </footer>
     </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="./dist/js/app.js"></script>
   </body>
 </html>

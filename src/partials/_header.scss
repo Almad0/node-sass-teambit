@@ -1,14 +1,22 @@
-
-$bg_dark: #333;
-$text_white: white;
-
-
-
-body{
-  background-color: $bg_dark;
-}
-
-
-h2, h3{
-  color: $text_white;
+nav{
+  height: 80px;
+  border-bottom: 2px solid black;
+  @include flex(row, space-between);
+  .logo{
+    width: $w20;
+  }
+  .menu{
+    width: $w30;
+    @include flex(row, space-between);
+    .g-btn{
+      height: 40px;
+      width: 100px;
+      border: 1px solid $br_blue;
+      background-color: $bg_white;
+      img{
+        vertical-align: middle;
+        width: 20px;
+      }
+    }
+  }
 }
