@@ -1,5 +1,5 @@
 nav{
-  height: 80px;
+  height: $px80;
   border-bottom: 2px solid black;
   @include flex(row, space-between);
   .logo{
@@ -9,14 +9,65 @@ nav{
     width: $w30;
     @include flex(row, space-between);
     .g-btn{
-      height: 40px;
-      width: 100px;
+      height: $px40;
+      width: $px100;
       border: 1px solid $br_blue;
+      border-radius: $px10;
       background-color: $bg_white;
       img{
         vertical-align: middle;
-        width: 20px;
+        width: $px20;
       }
     }
   }
+  .hamburger{
+    display: none;
+    i{
+      font-size: $px30;
+    }
+  }
+
+}
+
+
+@media screen  and (max-width: 480px){
+  header{
+    nav{
+      @include flex(row, space-between);
+      .logo{
+        width: $w50;
+      }
+      .menu{
+        display: none;
+        width: $w50;
+      }
+      .hamburger{
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media screen  and (min-width: 481px) and (max-width: 1169px){
+  header{
+    nav{
+      @include flex(row, space-between);
+      .logo{
+        width: $w50;
+      }
+      .menu{
+        display: none;
+        width: $w50;
+      }
+      .hamburger{
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media screen  and (min-width: 1170px){
+
 }

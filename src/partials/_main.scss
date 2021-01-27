@@ -1,0 +1,71 @@
+.jumbo{
+  @include flex(row, space-between);
+  .jumboLeft{
+    width: $w50;
+    @include flex(column, space-between, flex-start);
+    h1{
+      color: $tx_brown;
+      font-size: 3.3rem;
+      margin: $px10 0;
+      line-height: 5rem;
+    }
+    p{
+      margin: $px10;
+      margin-bottom: $px50;
+      .btn{
+        @include btn;
+        img{
+          vertical-align: middle;
+          width: $px20;
+        }
+      }
+    }
+
+  }
+  .jumboRight{
+    width: $w50;
+    img{
+      width: $w100;
+    }
+  }
+}
+
+
+@media screen  and (max-width: 480px){
+  main{
+    .jumbo{
+      @include flex(column, flex-start, center);
+      width: $w100;
+      .jumboLeft{
+        width: $w100;
+        @include flex(column, space-between, center);
+        h1, p{
+          text-align: center;
+        }
+      }
+    }
+    .jumboRight{
+      width: $w100;
+    }
+  }
+}
+
+
+@media screen  and (min-width: 481px) and (max-width: 1169px){
+
+  main{
+    .jumbo{
+      @include flex(column, flex-start, center);
+      .jumboLeft{
+        width: $w100;
+        @include flex(column, space-between, center);
+        h1, p{
+          text-align: center;
+        }
+      }
+      .jumboRight{
+        width: $w100;
+      }
+    }
+  }
+}

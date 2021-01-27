@@ -14,22 +14,42 @@ $w90: 90%;
 $w100: 100%;
 
 
-// height----
 
-$h10: 10%;
-$h20: 20%;
-$h30: 30%;
-$h40: 40%;
-$h50: 50%;
-$h60: 60%;
-$h70: 70%;
-$h80: 80%;
-$h90: 90%;
-$h100: 100%;
 
+// margin & padding----
+$px5: 5px;
+$px10: 10px;
+$px15: 15px;
+$px20: 20px;
+$px25: 25px;
+$px30: 30px;
+$px35: 35px;
+$px40: 40px;
+$px45: 45px;
+$px50: 50px;
+$px55: 55px;
+$px60: 60px;
+$px70: 70px;
+$px80: 80px;
+$px90: 90px;
+$px100: 100px;
+
+
+@media screen  and (max-width: 480px){
+  .container{
+    width: $w100;
+  }
+}
+
+
+@media screen  and (min-width: 481px) and (max-width: 1169px){
+  .container{
+    width: $w100;
+  }
+}
 
 .container{
-  width: $w80;
+  width: $w90;
   margin: auto;
 }
 
@@ -45,6 +65,7 @@ $bg_white: white;
 
 $tx_brown: #58402C;
 $tx_blue: #2C4792;
+$tx_white: white;
 
 // color variables----
 

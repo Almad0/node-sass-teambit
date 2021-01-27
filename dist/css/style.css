@@ -1,5 +1,15 @@
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1169px) {
+  .container {
+    width: 100%;
+  }
+}
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -25,9 +35,137 @@ nav .menu .g-btn {
   height: 40px;
   width: 100px;
   border: 1px solid #2C4792;
+  border-radius: 10px;
   background-color: white;
 }
 nav .menu .g-btn img {
   vertical-align: middle;
   width: 20px;
+}
+nav .hamburger {
+  display: none;
+}
+nav .hamburger i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo {
+    width: 50%;
+  }
+  header nav .menu {
+    display: none;
+    width: 50%;
+  }
+  header nav .hamburger {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1169px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .logo {
+    width: 50%;
+  }
+  header nav .menu {
+    display: none;
+    width: 50%;
+  }
+  header nav .hamburger {
+    display: block;
+  }
+}
+.jumbo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbo .jumboLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.jumbo .jumboLeft h1 {
+  color: #58402C;
+  font-size: 3.3rem;
+  margin: 10px 0;
+  line-height: 5rem;
+}
+.jumbo .jumboLeft p {
+  margin: 10px;
+  margin-bottom: 50px;
+}
+.jumbo .jumboLeft p .btn {
+  background-color: #2C4792;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.jumbo .jumboLeft p .btn img {
+  vertical-align: middle;
+  width: 20px;
+}
+.jumbo .jumboRight {
+  width: 50%;
+}
+.jumbo .jumboRight img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  main .jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  main .jumbo .jumboLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .jumbo .jumboLeft h1, main .jumbo .jumboLeft p {
+    text-align: center;
+  }
+  main .jumboRight {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1169px) {
+  main .jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .jumbo .jumboLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .jumbo .jumboLeft h1, main .jumbo .jumboLeft p {
+    text-align: center;
+  }
+  main .jumbo .jumboRight {
+    width: 100%;
+  }
 }

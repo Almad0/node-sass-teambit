@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Sass first</title>
     <link rel="stylesheet" href="./dist/css/style.css">
 
@@ -20,23 +21,29 @@
             <p class="linkMenu" v-for="(links, index) in navLink">{{links.name}}</p>
             <button class="g-btn" type="button" name="signUp"><img src="dist/img/google-logo.svg"> Sign up</button>
           </div>
+
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
         </nav>
 
       </header>
 
       <main>
-        <div class="jumbo">
+        <div class="jumbo container">
           <div class="jumboLeft">
             <h1>Understand, recognize and develop your people</h1>
             <p>Teambit helps teams create a high performing culture with regular feedback</p>
-            <p><button type="button" name="g-sign">Sign in with Google</button> or <button type="button" name="s-sign">Sign in with Slack</button> or use your emali adress &#8594;</p>
+            <p><button class="btn" type="button" name="g-sign"><img src="dist/img/google-logo.svg" alt=""> Sign in with Google</button> or <button class="btn" type="button" name="s-sign"><img src="dist/img/slack-logo.svg" alt=""> Sign in with Slack</button></p>
+            <p>or use your email adress &#8594;</p>
           </div>
 
           <div class="jumboRight">
-            <img src="" alt="">
+            <img src="./dist/img/illustration-main.jpg" alt="">
           </div>
-
         </div>
+
+
 
       </main>
 

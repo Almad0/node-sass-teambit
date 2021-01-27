@@ -4,3 +4,11 @@
   justify-content: $justyfy;
   align-items: $align;
 }
+
+@mixin btn{
+  background-color: $bg_blue;
+  color: $tx_white;
+  padding: $px10 $px20;
+  font-weight: bold;
+  border-radius: $px10;
+}
