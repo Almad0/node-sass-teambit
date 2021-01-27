@@ -34,7 +34,7 @@ var root = new Vue({
       img: "./dist/img/notsafe.png",
       text: "they are hardcore, formal and disconnected"
     }],
-    workFlowImgtwo: [{
+    workFlowImgTwo: [{
       img: "./dist/img/lightweight.png",
       text: "it's lightweight fun and interconnected"
     }, {

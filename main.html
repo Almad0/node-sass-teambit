@@ -43,6 +43,34 @@
           </div>
         </div>
 
+        <div class="beforeAfter">
+
+          <div class="before">
+            <h3>Traditional people processes lead to disengagement and turnover.</h3>
+            <div class="cardSections">
+              <div class="card" v-for="card in workFlowImgOne">
+                <img :src=`${card.img}` alt="">
+                <p>{{card.text}}</p>
+              </div>
+            </div>
+            <img src="./dist/img/before.png" alt="">
+          </div>
+
+          <hr>
+
+          <div class="after">
+            <h3>Traditional people processes lead to disengagement and turnover.</h3>
+            <div class="cardSections">
+              <div class="card" v-for="card in workFlowImgTwo">
+                <img :src=`${card.img}` alt="">
+                <p>{{card.text}}</p>
+              </div>
+            </div>
+            <img src="./dist/img/after.png" alt="">
+          </div>
+
+        </div>
+
 
 
       </main>

@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 // dimensioni-----------------------------------
 
 // width----
@@ -33,6 +39,11 @@ $px70: 70px;
 $px80: 80px;
 $px90: 90px;
 $px100: 100px;
+$px120: 120px;
+$px150: 150px;
+$px200: 200px;
+$px250: 250px;
+$px300: 300px;
 
 
 @media screen  and (max-width: 480px){
@@ -60,6 +71,7 @@ $px100: 100px;
 $bg_pink: #FFE7D2;
 $bg_blue: #2C4792;
 $bg_white: white;
+$bg_brown: #58402C;
 
 // color text----
 

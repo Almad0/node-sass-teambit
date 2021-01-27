@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 480px) {
   .container {
     width: 100%;
@@ -85,11 +91,16 @@ nav .hamburger i {
     display: block;
   }
 }
+* {
+  color: #58402C;
+}
+
 .jumbo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 80px auto;
 }
 .jumbo .jumboLeft {
   width: 50%;
@@ -99,7 +110,6 @@ nav .hamburger i {
   align-items: flex-start;
 }
 .jumbo .jumboLeft h1 {
-  color: #58402C;
   font-size: 3.3rem;
   margin: 10px 0;
   line-height: 5rem;
@@ -126,6 +136,60 @@ nav .hamburger i {
   width: 100%;
 }
 
+.beforeAfter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FFE7D2;
+  padding: 40px 0;
+}
+.beforeAfter hr {
+  background-color: #58402C;
+  width: 80%;
+  height: 5px;
+  margin-bottom: 20px;
+}
+.beforeAfter .before, .beforeAfter .after {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.beforeAfter .before h3, .beforeAfter .after h3 {
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.beforeAfter .before .cardSections, .beforeAfter .after .cardSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.beforeAfter .before .cardSections .card, .beforeAfter .after .cardSections .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+.beforeAfter .before .cardSections .card img, .beforeAfter .after .cardSections .card img {
+  padding: 0;
+  height: 200px;
+  width: auto;
+}
+.beforeAfter .before .cardSections .card p, .beforeAfter .after .cardSections .card p {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.beforeAfter .before img, .beforeAfter .after img {
+  width: 50%;
+  padding: 40px;
+}
+
 @media screen and (max-width: 480px) {
   main .jumbo {
     display: flex;
@@ -145,6 +209,24 @@ nav .hamburger i {
     text-align: center;
   }
   main .jumboRight {
+    width: 100%;
+  }
+
+  .beforeAfter .before .cardSections, .beforeAfter .after .cardSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+  .beforeAfter .before .cardSections .card, .beforeAfter .after .cardSections .card {
+    margin: 20px;
+  }
+  .beforeAfter .before .cardSections .card img, .beforeAfter .after .cardSections .card img {
+    width: 80%;
+    height: 80%;
+  }
+  .beforeAfter .before img, .beforeAfter .after img {
     width: 100%;
   }
 }
@@ -167,5 +249,23 @@ nav .hamburger i {
   }
   main .jumbo .jumboRight {
     width: 100%;
+  }
+
+  .beforeAfter .before .cardSections, .beforeAfter .after .cardSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+  .beforeAfter .before .cardSections .card, .beforeAfter .after .cardSections .card {
+    margin: 20px;
+  }
+  .beforeAfter .before .cardSections .card img, .beforeAfter .after .cardSections .card img {
+    width: 50%;
+    height: auto;
+  }
+  .beforeAfter .before img, .beforeAfter .after img {
+    width: 80%;
   }
 }

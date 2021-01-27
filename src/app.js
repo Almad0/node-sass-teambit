@@ -39,7 +39,7 @@ let root = new Vue({
       },
     ],
 
-    workFlowImgtwo: [
+    workFlowImgTwo: [
       {
         img: "./dist/img/lightweight.png",
         text: "it's lightweight fun and interconnected",

@@ -1,10 +1,14 @@
+*{
+  color: $tx_brown;
+}
+
 .jumbo{
   @include flex(row, space-between);
+  margin: $px80 auto;
   .jumboLeft{
     width: $w50;
     @include flex(column, space-between, flex-start);
     h1{
-      color: $tx_brown;
       font-size: 3.3rem;
       margin: $px10 0;
       line-height: 5rem;
@@ -20,7 +24,6 @@
         }
       }
     }
-
   }
   .jumboRight{
     width: $w50;
@@ -30,9 +33,55 @@
   }
 }
 
+.beforeAfter{
+  @include flex(column, flex-start, center);
+  background-color: $bg_pink;
+  padding: $px40 0;
+  hr{
+    background-color: $bg_brown;
+    width: $w80;
+    height: $px5;
+    margin-bottom: $px20;
+  }
+  .before, .after{
+    @include flex(column, flex-start, center);
+    h3{
+      font-size: 2.5rem;
+      width: $w60;
+      text-align: center;
+      margin-bottom: $px40;
+    }
+    .cardSections{
+      @include flex(row, space-between, center);
+      width: $w100;
+      .card{
+        @include flex(column, flex-start, center);
+        margin: $px20;
+        img{
+          padding: 0;
+          height: $px200;
+          width: auto;
+        }
+        p{
+          margin: $px10;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    img{
+      width: $w50;
+      padding: $px40;
+    }
+  }
+}
 
-@media screen  and (max-width: 480px){
+
+
+// Mediaquery--------------------------------
+
+@media screen and (max-width: 480px){
   main{
+
     .jumbo{
       @include flex(column, flex-start, center);
       width: $w100;
@@ -48,12 +97,32 @@
       width: $w100;
     }
   }
+
+  .beforeAfter{
+    .before, .after{
+      .cardSections{
+        @include flex(column, flex-start, center);
+        width: $w50;
+        .card{
+          margin: $px20;
+          img{
+            width: $w80;
+            height: $w80;
+          }
+        }
+      }
+      img{
+        width: $w100;
+      }
+    }
+  }
 }
 
 
-@media screen  and (min-width: 481px) and (max-width: 1169px){
+@media screen and (min-width: 481px) and (max-width: 1169px){
 
   main{
+
     .jumbo{
       @include flex(column, flex-start, center);
       .jumboLeft{
@@ -68,4 +137,24 @@
       }
     }
   }
+
+  .beforeAfter{
+    .before, .after{
+      .cardSections{
+        @include flex(column, flex-start, center);
+        width: $w50;
+        .card{
+          margin: $px20;
+          img{
+           width: $w50;
+           height: auto;
+          }
+        }
+      }
+      img{
+        width: $w80;
+      }
+    }
+  }
+
 }
