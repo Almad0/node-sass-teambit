@@ -119,7 +119,7 @@ nav .hamburger i {
   margin-bottom: 50px;
 }
 .jumbo .jumboLeft p .btn {
-  background-color: #2C4792;
+  background-color: #922C2C;
   color: white;
   padding: 10px 20px;
   font-weight: bold;
@@ -141,14 +141,19 @@ nav .hamburger i {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #FFE7D2;
+  background-color: #93C7D0;
   padding: 40px 0;
 }
 .beforeAfter hr {
   background-color: #58402C;
   width: 80%;
   height: 5px;
-  margin-bottom: 20px;
+  margin: 100px;
+}
+.beforeAfter h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 100px 0 40px 0;
 }
 .beforeAfter .before, .beforeAfter .after {
   display: flex;
@@ -188,6 +193,49 @@ nav .hamburger i {
 .beforeAfter .before img, .beforeAfter .after img {
   width: 50%;
   padding: 40px;
+}
+
+.leftRight .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.leftRight .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.leftRight .infonograph {
+  width: 100%;
+  margin: 40px 0;
+}
+.leftRight .infonograph .graph {
+  width: 50%;
+}
+.leftRight .infonograph .graph img {
+  max-width: 100%;
+}
+.leftRight .infonograph .card {
+  width: 40%;
+  margin-top: 100px;
+}
+.leftRight .infonograph .card h3 {
+  font-size: 2rem;
+}
+.leftRight .infonograph .card p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.leftRight .infonograph .card a {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #2C4792;
+  display: block;
+}
+.leftRight .infonograph .card img {
+  width: 70%;
 }
 
 @media screen and (max-width: 480px) {

@@ -41,7 +41,12 @@
     background-color: $bg_brown;
     width: $w80;
     height: $px5;
-    margin-bottom: $px20;
+    margin: $px100;
+  }
+  h4{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: $px100 0 $px40 0;
   }
   .before, .after{
     @include flex(column, flex-start, center);
@@ -74,6 +79,58 @@
     }
   }
 }
+
+
+// leftright-----
+
+.leftRight{
+  .left{
+    @include flex(row, flex-start, flex-start);
+  }
+  .right{
+    @include flex(row, flex-end, flex-start);
+  }
+  .infonograph{
+    width: $w100;
+    margin: $px40 0;
+    .graph{
+      width: $w50;
+      img{
+        max-width: $w100;
+      }
+    }
+    .card{
+      width: $w40;
+      margin-top: $px100;
+      h3{
+        font-size: 2rem;
+      }
+      p{
+        margin: $px20 0;
+        font-size: 1.2rem;
+      }
+      a{
+        margin: $px20 0;
+        text-decoration: none;
+        color: $tx_blue;
+        display: block;
+      }
+      img{
+        width: $w70;
+      }
+    }
+
+
+}
+}
+
+
+
+
+
+
+
+
 
 
 
